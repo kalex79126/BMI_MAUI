@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test3AlexKimMAUI.AthleteDetailedPage"
+             Title="Athlete Information">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                  ColumnDefinitions="Auto, *"
+                  Padding="10"
+                  RowSpacing="10"
+                  ColumnSpacing="10">
+                <Label x:Name="lblName" Text="Name:" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" />
+                <Label x:Name="lblNameValue"  Text="{Binding FullName}" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" />
+                <Label x:Name="lblAge" Text="Age:" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" />
+                <Label x:Name="lblAgeValue" Text="{Binding Age}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+                <Label x:Name="lblSport" Text="Sport:" Grid.Row="2" Grid.Column="0" VerticalOptions="Center" />
+                <Label x:Name="lblSportValue" Text="{Binding Sport.Type}" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" />
+                <Label x:Name="lblHeight" Text="Height:" Grid.Row="3" Grid.Column="0" VerticalOptions="Center" />
+                <Label x:Name="lblHeightValue" Text="{Binding Height}" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" />
+                <Label x:Name="lblWeight" Text="Weight:" Grid.Row="4" Grid.Column="0" VerticalOptions="Center" />
+                <Label x:Name="lblWeightValue" Text="{Binding Weight}" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" />
+                <Label x:Name="lblBMI" Text="BMI:" Grid.Row="5" Grid.Column="0" VerticalOptions="Center" />
+                <Label x:Name="lblBMIValue" Text="{Binding BMI}" Grid.Row="5" Grid.Column="1" VerticalOptions="Center" />
+                <Label x:Name="lblBMICategory" Text="BMI Category:" Grid.Row="6" Grid.Column="0" VerticalOptions="Center" />
+                <Label x:Name="lblBMICategoryValue" Text="{Binding BMICategory}" Grid.Row="6" Grid.Column="1" VerticalOptions="Center" />
+            </Grid>
+
+            <Button x:Name="btnReturn" Text="Return" Clicked="ReturnClicked" Margin="5,5,5,5" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
