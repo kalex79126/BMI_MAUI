@@ -1,1 +1,5 @@
 # BMI_MAUI
+
+MAUI
+C#
+XAML
